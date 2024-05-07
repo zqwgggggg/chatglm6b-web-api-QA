@@ -1,0 +1,2 @@
+# chatglm6b-web-api-QA
+本文档描述了如何在本地部署 ChatGLM-6B 模型，实现类似GPT3.5的API调用。 实现了一个可以在web端调用本地部署的chatglm6b和远程调用的chatgpt3.5通过使用其指定的prompt实现给定一段文本材料可以抽取出其中的问答对
