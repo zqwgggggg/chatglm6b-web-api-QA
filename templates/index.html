@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1 class="title">阅读助手</h1>
+    <div class="chat-container">
+        <ul id="message-list"></ul>
+    </div>
+    <div class="input-container">
+        <label for="model-select">选择模型：</label>
+        <select id="model-select" name="model-select">
+            <option value="1">Chat-gpt3.5</option>
+            <option value="2">Chat-glm6b</option>
+        </select>
+        <input type="text" id="question-input" placeholder="输入问题">
+        <button id="send-button">发送</button>
+    </div>
+    <div class="prompt-container">
+    <select id="prompt-select" name="prompt-select" size="1">
+        <option value="prompt1">prompt-gpt-zh</option>
+        <option value="prompt2">prompt-gpt-en</option>
+        <option value="prompt3">prompt-glm-en</option>
+        <option value="prompt4">prompt-glm-zh</option>
+        <!-- 添加更多的提示选项 -->
+    </select>
+    </div>
+    <div class="param-container">
+    <label for="param1">max_tokens：</label>
+    <input type="range" id="param1" name="param1" min="0" max="4000" value="4000">
+    <span id="param1-value">4000</span>
+    <label for="param2"> temperature：</label>
+    <input type="range" id="param2" name="param2" min="0" max="2" step="0.1" value="0.1">
+    <span id="param2-value">0.1</span>
+</div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* 标题样式 */
+.title {
+  text-align: center; /* 文字居中对齐 */
+  color: #4CAF50; /* 设置文字颜色为粉红色 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 设置字体样式 */
+  font-size: 2em; /* 设置字体大小为2倍 */
+  margin-top: 20px; /* 设置标题与上方元素的间距 */
+}
+
+/* 聊天框容器 */
+.chat-container {
+  max-width: 60%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  /*align-items: center; !* 居中对齐 *!*/
+}
+
+/* 输入框容器 */
+.input-container {
+  display: flex;
+  align-items: center; /* 居中对齐 */
+  padding: 10px;
+}
+
+/* 输入框样式 */
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* 发送按钮样式 */
+.input-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-container {
+  width: 600px;
+  height: 700px;
+  border: 10px solid #ccc;
+  overflow-y: scroll;
+}
+.prompt-container {
+  position: absolute; /* 绝对定位 */
+  left: 40px; /* 左边距为 0 */
+  top: 90px; /* 顶部边距，根据需要进行调整 */
+  width: 300px; /* 设置容器的宽度 */
+  height: 700px; /* 设置容器的高度 */
+  margin: 1px; /* 设置外边距 */
+  border: 5px solid #4CAF50 ;/* 设置边框 */
+  border-radius: 5px; /* 设置圆角 */
+  overflow-y: auto; /* 添加垂直滚动条 */
+}
+#prompt-select {
+  position: fixed; /* 使用固定定位 */
+  top: 45px; /* 根据需要调整位置 */
+  left: 40px; /* 根据需要调整位置 */
+  z-index: 999; /* 确保下拉菜单位于最上层 */
+  margin: 1px; /* 设置外边距 */
+  border: 5px solid #4CAF50 ;/* 设置边框 */
+  border-radius: 5px; /* 设置圆角 */
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#input-message {
+  flex: 1;
+}
+
+#send-button {
+  margin-left: 10px;
+}
+
+/* 用户消息样式 */
+.user-message {
+    text-align: left;
+    background-color: #F0F0F0;
+    padding: 5px;
+    margin-bottom: 15px; /* 增加间距 */
+}
+
+/* 机器人消息样式 */
+.bot-message {
+    text-align: left;
+    background-color: #D3D3D3;
+    padding: 5px;
+    margin-bottom: 15px; /* 增加间距 */
+}
+/* 参数滑动条容器样式 */
+.param-container {
+    display: flex;
+    align-items: center;
+    position: absolute; /* 绝对定位 */
+    right: 100px; /* 左边距为 0 */
+    top: 400px; /* 顶部边距，根据需要进行调整 */
+    margin-top: 10px;
+    align-self: flex-start; /* 参数滑动条容器顶部对齐 */
+    flex-direction: column; /* 垂直排列 */
+}
+
+/* 参数标签样式 */
+.param-container label {
+    margin-bottom: 5px; /* 底部间距 */
+}
+
+/* 参数滑动条样式 */
+.param-container input[type="range"] {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    margin-bottom: 5px; /* 底部间距 */
+}
+
+.param-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}

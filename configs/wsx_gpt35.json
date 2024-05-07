@@ -1,0 +1,6 @@
+{
+  "model": "gpt-3.5-turbo",
+  "api_key": "sk-jgzszvjMlD4Z0vaR4aFb220e96Bf441eBc43084fA1739e2f",
+  "base_url": "htttps://api.xit.app/v1",
+  "seed": 12345
+}
